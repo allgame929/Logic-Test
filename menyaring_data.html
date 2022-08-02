@@ -1,0 +1,25 @@
+
+<!-- Saringlah data berikut agar outputnya menjadi hanya orang-orang di bawah 21 tahun. -->
+
+
+<script>
+    const people = [
+    { id: 1, name: 'Udin', age: 12 },
+    { id: 2, name: 'Wati', age: 51 },
+    { id: 3, name: 'Budi', age: 34 },
+    { id: 1, name: 'Agus', age: 16 },
+    { id: 1, name: 'Sari', age: 19 },
+    { id: 6, name: 'Ririn', age: 21 },
+    ];
+        
+
+    const people2 =  people.filter(function(terpilih) {
+            return terpilih.id == "1";
+            
+        });
+    
+     
+    console.log(people2);
+
+
+</script>

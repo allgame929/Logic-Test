@@ -1,0 +1,37 @@
+
+
+<html>
+    <head>
+        <body>
+
+            Masukan Angka Awal : <input type="number" id="a">
+            Masukan Angka Terakhir : <input type="number" id="b">
+            <input type="submit" value="Print_prime" 
+            onClick="acak()">
+
+            <script type="text/javascript">
+                var num,num1,i,f=0;
+                    function acak() 
+                    {
+                        num=Number(document.getElementById("a").value);
+                        num1=Number(document.getElementById("b").value);
+                        while(num<=num1) 
+                        {
+                            f=0;
+                                for(i=1;i<=num;i++) {
+                                    if(num%i==0) {
+                                        f++;
+                                    }
+                        }
+                        if(f==2) {
+                            document.write(num+" ");
+                        }
+                            num++;
+                    }
+                }
+                    
+            </script>
+
+        </body>
+    </head>
+</html>
